@@ -1,0 +1,485 @@
+dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,ul,p,select,textarea{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight: 400;
+}
+body{
+    min-height:100%;
+    margin:0 auto;
+    padding:0;
+    font-size: 12px;
+    background-color:#000 !important;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    position:relative;
+    overflow-x:hidden;
+    max-width:1920px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+ol,
+ul{
+    list-style:none;
+}
+img{border:0;}
+a{
+    text-decoration:none;
+    outline:0;
+}
+a:hover{
+    text-decoration:none;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    height:0;
+    clear: both;
+    zoom:1;
+}
+
+/********* header start ***********/
+.header {
+    position: relative;
+    z-index: 1;
+}
+.header .navbar {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+}
+.header .top-nav {
+    overflow: hidden;
+}
+.header .top-nav li{
+    width:128px;
+    float:left;
+    text-align: center;
+    margin-left: 58px;
+    padding-top:55px;
+    padding-bottom: 2px;
+}
+.header .top-nav li a{
+    display: block;
+    font-size:16px;
+    color:#fff;
+    letter-spacing:1px;
+    line-height:100%;
+    position: relative;
+}
+/* a标签紫色横线 */
+.header .top-nav li a:hover::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:7px;
+    width:100%;
+    height:3px;
+    background-color:#7049cb;
+    z-index:-1;
+}
+.header .top-nav li a:hover{
+    color:#fff;
+}
+.header .top-nav li:first-child{
+    margin-left:0;
+}
+/* 第四个li距离左边一个220px */
+.header .top-nav li:first-child + li + li + li{
+    margin-left:220px;
+}
+.header .dota2-logo-box{
+    position: absolute;
+    top:23px;
+    left:50%;
+    width:189px;
+    height:83px;
+    background-image:url(/img/header_img/dota2-logo.png);
+    margin-left:-94.5px;
+    overflow: hidden;
+}
+.header .dota2-logo{
+    display:block;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+/************************ wrapper style ***************************/
+.wrapper{
+    min-height:1060px;
+    margin-top:-73px;
+    position: relative;
+}
+.banner{
+    position: relative;
+    width:100%;
+    height:1138px;
+    padding-top:119px;
+    /* overflow:hidden; */
+    /* 背景图 */
+    background:url(/img/header_img/roushan_dun_bg.jpg) center top no-repeat;
+}
+.banner .video{
+    width:1920px;
+    position: absolute;
+    left:50%;
+    top:0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform:translateX(-50%);
+}
+.banner .bonus-pools{
+    position: relative;
+    z-index:9;
+    text-align:center;
+}
+.banner .bonus-pools h3{
+    margin:0 auto;
+    /* 实时总奖金池 */
+    background-image: url(img/body_img/bonus-pools-bg.png);
+    width:351px;
+    height:24px;
+}
+.banner .bonus-pools p{
+    margin-top:8px;
+    display: block;
+    height:100%;
+    font-family:RADIANCEM;
+    letter-spacing: 6px;
+    text-shadow: 0 6px 15px #000;
+    font-size:68px;
+    color:#fff;
+}
+.banner .bonus-pools >a{
+    position: absolute;
+    top:0;
+    left:50%;
+    height:500px;
+    width:1000px;
+    margin-left: -500px;
+}
+.banner .bonus-pools > button{
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    left:50%;
+    top:256px;
+    margin-left:-45px;
+    width: 90px;
+    height:90px;
+    /*动画按钮 */
+    background-image:url(/img/body_img/play-btn.png);
+    cursor: pointer;
+    outline:none;
+    opacity:0;
+    transition:opacity 0.2s;
+}
+.banner .bonus-pools > button:hover{
+    opacity: 1 !important;
+}
+.banner .banner-layers{
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+.banner .banner-layers li{
+    position: absolute;
+    width:730px;
+    height: 235px;
+    /* 英雄,见证不朽 */
+    background-image:url(/img/body_img/layer3.png);
+    bottom: 296px;
+    left:50%;
+    margin-left:-378px;
+}
+
+
+
+
+
+/************** mak-footer start *******/
+.banner .mak-footer{
+    position: absolute;
+    bottom:-142px;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    background: url(img/body_img/heng_img.png) no-repeat center top;
+    height: 301px;
+    z-index: 2;
+}
+.cover-content{
+    position: absolute;
+    left:50%;
+    bottom: 24px;
+    z-index: 9;
+    width:1200px;
+    margin-left:-600px;
+    text-align:center;
+}
+.cover-content li{
+    width:340px;
+    float: left;
+    margin-left:90px;
+    height:183px;
+    position: relative;
+}
+.cover-content li .border-tip{
+    position:absolute;
+    width:366px;
+    height:244px;
+    left: -26px;
+    top:-34px;
+    z-index: 2;
+    /* 图片框 */
+    background: url(img/body_img/border-tip.png) no-repeat;
+}
+.cover-content li:nth-child(2) .border-tup{
+    background-position-x: -437px;
+    width:373px;
+    left:-18px;
+}
+.cover-content li:nth-child(3) .border-tup{
+    background-position-x: 100%;
+    left:0px;
+}
+.cover-content li:first-child{
+    margin-left: 0;
+}
+.cover-content li:hover .cover-group{
+    -webkit-transform:translateY(-22px);
+    -moz-transform:translateY(-22px);
+    -ms-transform:translateY(-22px);
+    transform:translateY(-22px);
+    opacity:1;
+}
+.cover-content li:hover h4{
+    display: block;
+    opacity: 1;
+    visibility: inherit;
+}
+.cover-content h4{
+    visibility: hidden;
+    opacity: 0;
+    font-size:18px;
+    color:#8b64cd;
+    margin-top:0px;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    position: relative;
+}
+.cover-content .cover-group{
+    position: relative;
+    height:100%;
+    box-sizing: border-box;
+    transition:all 0.6s ease;
+    opacity: 1;
+}
+.cover-content .cover-group img{
+    height:100%;
+}
+.cover-content .mask,
+.cover-content a{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+.cover-content a{
+    z-index: 2;
+}
+
+
+
+
+
+/* main */
+.main{
+    position: relative;
+    padding-top:18px;
+    height:1955px;
+    box-sizing:border-box;
+    background:url(img/body_img/MBez.jpg) no-repeat center top;
+}
+.main h1{
+    height:207px;
+    background: url(img/body_img/main-tit.png) no-repeat center top;
+}
+.main-header{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+    z-index: 3;
+}
+.main-header ul{
+    width:282px;
+    margin:6px auto 0;
+    overflow: hidden;
+}
+.main-header li{
+    float: left;
+    margin-left: 41px;
+}
+.main-header li:first-child{
+    margin-left: 12px;
+}
+.main-header li a{
+    font-size:18px;
+    color:#666;
+    letter-spacing:2px;
+}
+.main-header li a span{
+    position: relative;
+    top:2px;
+}
+.main-header li.active a{
+    color:#fff;
+}
+.main-header li.disabled{
+    pointer-events: none;
+}
+.main-body .text-info{
+    text-align:center;
+    font-size:18px;
+    color:#8f69d4;
+    margin:25px 0 47px 0;
+}
+.main-body .right{
+    position: absolute;
+    right:0;
+    top:206px;
+    width:400px;
+    height:884px;
+    /* 右侧盾和花藤 */
+    background-image:url(img/body_img/right_dun.png);
+}
+.main-body .plan1-video{
+    position: relative;
+    width:1000px;
+    margin: 0 auto;
+    text-align:center;
+    font-size:18px;
+    color: #8f69d4;
+}
+.main-body .plan1-video .video-box{
+    height:500px;
+}
+.main-body .plan1-video .video-box video{
+    width:100%;
+    height:100%;
+}
+.main-body .plan1-video .RewarkHeroImage{
+    position: absolute;
+    top:0;
+    left:-50%;
+    width:800px;
+    height:800px;
+    z-index: 20;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events:none;
+}
+.main-body .plan1-video .RewardHeroImage img{
+    position: absolute;
+    left:0;
+    z-index: 3;
+    width:100%;
+}
+.main-body .plan1-video .name{
+    font-size:24px;
+    color:#fff;
+    margin:30px 0 10px;
+}
+.video-navbar{
+    width:1500px;
+    margin:-16px auto 0;
+    height:258px;
+    overflow: hidden;
+}
+.video-navbar li{
+    float:left;
+}
+.video-navbar li span{
+    position: relative;
+    transform:translateY(0);
+    cursor: pointer;
+    display:block;
+    height:258px;
+    background:url(img/body_img/zhibao.png) no-repeat;
+    transition:all 0.2s ease;
+}
+.video-navbar li:nth-child(1) span{
+    width:145px;
+    background-position-x: -36px;
+}
+.video-navbar li:nth-child(2) span{
+    width:103px;
+    background-position-x: -170px;
+    margin-left:-10px;
+}
+.video-navbar li:nth-child(3) span{
+    width:109px;
+    background-position-x: -273px;
+}
+.video-navbar li:nth-child(4) span{
+    width:156px;
+    background-position-x: -382px;
+}
+.video-navbar li:nth-child(5) span{
+    width:136px;
+    background-position-x: -538px;
+}
+.video-navbar li:nth-child(6) span{
+    margin-left:-18px;
+    margin-left:20px;
+}
+.video-navbar li:nth-child(6) span{
+    width:108px;
+    background-position-x: -674px;
+    margin-left:-20px;
+}
+.video-navbar li:nth-child(7) span{
+    width:152px;
+    background-position-x: -782px;
+    margin-left:-16px;
+}
+.video-navbar li:nth-child(8) span{
+    width:116px;
+    background-position-x: -934px;
+    margin-left:10px;
+}
+.video-navbar li:nth-child(9) span{
+    width:174px;
+    background-position-x: -1050px;
+}
+.video-navbar li:nth-child(10) span{
+    width:157px;
+    background-position-x: -1224px;
+    margin:0 2px;
+}
+.video-navbar li:nth-child(11) span{
+    width:154px;
+    background-position-x:100%;
+}
+.video-navbar li.active span{
+    transform:translateY(-22px);
+}
+.video-navbar li:hover span{
+    transform:translateY(-22px);
+}
