@@ -1,0 +1,884 @@
+@font-face {
+    font-family: RADIANCEM;
+    src: url("/cover/190429/Radiance-SemiBold.otf");
+  }
+  
+  dd,
+  div,
+  dl,
+  dt,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  input,
+  li,
+  ol,
+  p,
+  select,
+  textarea,
+  ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: 400;
+  }
+  body {
+    min-width: 1337px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12px;
+    background-color: #000 !important;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1920px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  area {
+    outline: 0;
+  }
+  img {
+    border: 0;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    outline: 0;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    zoom: 1;
+  }
+  #dota2_topnav {
+    display: none;
+  }
+  
+  .swiper-container01 {
+    height: 776px;
+  }
+  .swiper-container01 .swiper-slide {
+    overflow: hidden;
+  }
+  
+  .m-app .banner {
+    height: 1138px;
+  }
+  .m-app .share-model,
+  .m-app .bottom {
+    margin-top: -1px;
+  }
+
+
+
+
+
+
+
+  /*****************************header style************************************/
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+  .header .navbar {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .header .top-nav {
+    overflow: hidden;
+  }
+  .header .top-nav li {
+    width: 128px;
+    float: left;
+    text-align: center;
+    margin-left: 58px;
+    padding-top: 55px;
+    padding-bottom: 2px;
+  }
+  .header .top-nav li a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 100%;
+    position: relative;
+  }
+  .header .top-nav li a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: #7049cb;
+    z-index: -1;
+  }
+  .header .top-nav li a:hover {
+    color: #fff;
+  }
+  .header .top-nav li:first-child {
+    margin-left: 0;
+  }
+  .header .top-nav li:first-child + li + li + li {
+    margin-left: 220px;
+  }
+  .header .dota2-logo-box {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    width: 189px;
+    height: 83px;
+    background-image: url(/img/header_img/dota2-logo.png);
+    margin-left: -94.5px;
+    overflow: hidden;
+  }
+  .header .dota2-logo {
+    display: block;
+    height: 100%;
+  }
+  
+
+
+
+
+  /*******************************wrapper style****************/
+  .wrapper {
+    min-height: 1060px;
+    margin-top: -73px;
+    position: relative;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 1138px;
+    padding-top: 119px;
+    /* overflow: hidden; */
+    background: url(/img/header_img/roushan_dun_bg.jpg)
+      center top no-repeat;
+  }
+  .banner .video {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .banner .bonus-pools {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+  }
+  .banner .bonus-pools h3 {
+    margin: 0 auto;
+     /* 实时总奖金池 */
+    background-image: url(/img/body_img/bonus-pools-bg.png);
+    width: 351px;
+    height: 24px;
+  }
+  .banner .bonus-pools p {
+    margin-top: 8px;
+    display: block;
+    height: 100%;
+    font-family: RADIANCEM;
+    letter-spacing: 6px;
+    text-shadow: 0 6px 15px #000;
+    font-size: 68px;
+    color: #fff;
+  }
+  .banner .bonus-pools > a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 500px;
+    width: 1000px;
+    margin-left: -500px;
+  }
+  .banner .bonus-pools > button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 256px;
+    margin-left: -45px;
+    width: 90px;
+    height: 90px;
+     /* 动画按钮 */
+    background-image: url(img/body_img/play-btn.png);
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .banner .bonus-pools > button:hover {
+    opacity: 1 !important;
+  }
+  .banner .banner-layers {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .banner .banner-layers li {
+    position: absolute;
+    width: 730px;
+    height: 235px;
+    /* 英雄,见证不朽 */
+    background-image: url(/img/body_img/layer3.png);
+    bottom: 296px;
+    left: 50%;
+    margin-left: -378px;
+  }
+
+
+  /************** mak-footer ***********/
+  .banner .mak-footer {
+    position: absolute;
+    bottom: -142px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: url(/img/body_img/heng_img.png)
+      no-repeat center top;
+    height: 301px;
+    z-index: 2;
+  }
+  .cover-content {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    z-index: 9;
+    width: 1200px;
+    margin-left: -600px;
+    text-align: center;
+  }
+  .cover-content li {
+    width: 340px;
+    float: left;
+    margin-left: 90px;
+    height: 183px;
+    position: relative;
+  }
+  .cover-content li .border-tip {
+    position: absolute;
+    width: 366px;
+    height: 244px;
+    left: -26px;
+    top: -34px;
+    z-index: 2;
+    /* 图片框 */
+    background: url(img/body_img/border-tip.png) no-repeat;
+  }
+  .cover-content li:nth-child(2) .border-tip {
+    background-position-x: -437px;
+    width: 373px;
+    left: -18px;
+  }
+  
+  .cover-content li:nth-child(3) .border-tip {
+    background-position-x: 100%;
+    left: 0px;
+  }
+  .cover-content li:first-child {
+    margin-left: 0;
+  }
+  .cover-content li:hover .cover-group {
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  .cover-content li:hover h4 {
+    display: block;
+    opacity: 1;
+    visibility: inherit;
+  }
+  .cover-content h4 {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+    color: #8b64cd;
+    margin-top: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+  }
+  .cover-content .cover-group {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    opacity: 1;
+  }
+  
+  .cover-content .cover-group img {
+    height: 100%;
+  }
+  
+  .cover-content .mask,
+  .cover-content a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .cover-content a {
+    z-index: 2;
+  }
+
+  
+  /********** main ***************/
+  .main {
+    position: relative;
+    padding-top: 18px;
+    height: 1955px;
+    box-sizing: border-box;
+    background: url(img/body_img/MBez.jpg)
+      no-repeat center top;
+  }
+  .main h1 {
+    height: 207px;
+    background: url(img/body_img/main-tit.png) no-repeat center top;
+  }
+  .main-header {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+  .main-header ul {
+    width: 282px;
+    margin: 6px auto 0;
+    overflow: hidden;
+  }
+  .main-header li {
+    float: left;
+    margin-left: 41px;
+  }
+  .main-header li:first-child {
+    margin-left: 12px;
+  }
+  .main-header li a {
+    font-size: 18px;
+    color: #666666;
+    letter-spacing: 2px;
+  }
+  .main-header li a span {
+    position: relative;
+    top: 2px;
+  }
+  .main-header li.active a {
+    color: #fff;
+  }
+  .main-header li.disabled {
+    pointer-events: none;
+  }
+  .main-body .text-info {
+    text-align: center;
+    font-size: 18px;
+    color: #8f69d4;
+    margin: 25px 0 47px 0;
+  }
+  .main-body .right {
+    position: absolute;
+    right: 0;
+    top: 206px;
+    width: 400px;
+    height: 884px;
+    /* 右侧盾和花藤 */
+    background-image: url(img/body_img/right_dun.png);
+  }
+  .main-body .plan1-video {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #8f69d4;
+  }
+  .main-body .plan1-video .video-box {
+    height: 500px;
+  }
+  .main-body .plan1-video .video-box video {
+    width: 100%;
+    height: 100%;
+  }
+  .main-body .plan1-video .RewardHeroImage {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 800px;
+    height: 800px;
+    z-index: 20;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+  }
+  .main-body .plan1-video .RewardHeroImage img {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+  .main-body .plan1-video .name {
+    font-size: 24px;
+    color: #fff;
+    margin: 30px 0 10px;
+  }
+
+
+
+
+  .main-footer {
+    width: 1273px;
+    margin: 30px auto 0;
+  }
+  .main-footer .buy-btns {
+    overflow: hidden;
+    font-size: 14px;
+    color: #59a9b3;
+    text-align: center;
+  }
+  .main-footer .buy-btns li {
+    background: url(https://img.dota2.com.cn/file/8a/9c/8a9c4a31c75297eb3ee468c0784b791c1557318562.png)
+      no-repeat;
+    width: 33.333%;
+    height: 307px;
+    float: left;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  .main-footer .buy-btns li:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+  }
+  
+  .main-footer .buy-btns li:nth-child(1) h2 {
+    margin-top: 142px;
+  }
+  .main-footer .buy-btns li:nth-child(2) {
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-position-x: -424px;
+  }
+  .main-footer .buy-btns li:nth-child(2) a {
+    margin-left: -90px;
+  }
+  .main-footer .buy-btns li:nth-child(3) {
+    padding-left: 39px;
+    box-sizing: border-box;
+    background-position-x: 100%;
+  }
+  .main-footer .buy-btns li:nth-child(3) a {
+    margin-left: -78px;
+  }
+  .main-footer .buy-btns li:nth-child(3) p {
+    color: #ad93ed;
+  }
+  .buy-btns h2 {
+    font-size: 24px;
+    color: #fff;
+    margin: 134px 0 8px 0;
+    letter-spacing: 3px;
+  }
+  .buy-btns p {
+    line-height: 100%;
+    margin-bottom: 10px;
+    color: #7775f1;
+  }
+  .buy-btns a {
+    position: absolute;
+    padding-top: 12px;
+    left: 50%;
+    bottom: 66px;
+    margin-left: -97.5px;
+    width: 195px;
+    font-size: 14px;
+    height: 44px;
+    display: inline-block;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    background: url(/cover/190429/buy-btn-bg.png) no-repeat;
+  }
+  .buy-btns a:hover {
+    background-position-y: -63px;
+  }
+  
+  /* video-navbar*/
+  .video-navbar {
+    width: 1500px;
+    margin: -16px auto 0;
+    height: 258px;
+    overflow: hidden;
+  }
+  
+  .video-navbar li {
+    float: left;
+  }
+  
+  .video-navbar li span {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    cursor: pointer;
+    display: block;
+    height: 258px;
+    background: url(img/body_img/zhibao.png)
+      no-repeat;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .video-navbar li:nth-child(1) span {
+    width: 145px;
+    background-position-x: -36px;
+  }
+  .video-navbar li:nth-child(2) span {
+    width: 103px;
+    background-position-x: -170px;
+    margin-left: -10px;
+  }
+  
+  .video-navbar li:nth-child(3) span {
+    width: 109px;
+    background-position-x: -273px;
+  }
+  
+  .video-navbar li:nth-child(4) span {
+    width: 156px;
+    background-position-x: -382px;
+  }
+  
+  .video-navbar li:nth-child(5) span {
+    width: 136px;
+    background-position-x: -538px;
+  }
+  
+  .video-navbar li:nth-child(6) {
+    margin-left: -18px;
+    margin-left: 20px;
+  }
+  
+  .video-navbar li:nth-child(6) span {
+    width: 108px;
+    background-position-x: -674px;
+    margin-left: -20px;
+  }
+  
+  .video-navbar li:nth-child(7) span {
+    width: 152px;
+    background-position-x: -782px;
+    margin-left: -16px;
+  }
+  
+  .video-navbar li:nth-child(8) span {
+    width: 116px;
+    background-position-x: -934px;
+    margin-left: 10px;
+  }
+  
+  .video-navbar li:nth-child(9) span {
+    width: 174px;
+    background-position-x: -1050px;
+  }
+  
+  .video-navbar li:nth-child(10) span {
+    width: 157px;
+    background-position-x: -1224px;
+    margin: 0 2px;
+  }
+  .video-navbar li:nth-child(11) span {
+    width: 154px;
+    background-position-x: 100%;
+  }
+  
+  .video-navbar li.active span {
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    transform: translateY(-22px);
+  }
+  
+  .video-navbar li:hover span {
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    transform: translateY(-22px);
+  }
+  
+
+  
+  /*footer*/
+  .share-model {
+    background: #000 url(/cover/190429/footer-bg.jpg?v=201905140) no-repeat center
+      top;
+    clear: both;
+  }
+  .bottom {
+    height: 155px !important;
+    background: #000 url(/cover/190429/footer-bg.jpg?v=201905140) no-repeat center -128px;
+  }
+  .share-model .items {
+    width: 1078px;
+    margin: 0 auto;
+    padding: 42px 0;
+    border-bottom: 2px solid #1b3a43;
+  }
+  
+  .share-model li {
+    float: left;
+    margin-right: 39px;
+  }
+  
+  .share-model li a {
+    display: block;
+    background: url(/cover/190429/icons.png) no-repeat;
+    height: 42px;
+    width: 104px;
+  }
+  
+  .share-model li a:hover {
+    background-position-y: -42px;
+  }
+  
+  .share-model li a:hover .wechat-tip {
+    opacity: 1;
+    visibility: inherit;
+  }
+  
+  .share-model li:nth-child(2) a {
+    width: 118px;
+    background-position-x: -143px;
+  }
+  
+  .share-model li:nth-child(3) {
+    margin-right: 122px;
+  }
+  
+  .share-model li:nth-child(3) a {
+    width: 104px;
+    background-position-x: -301px;
+  }
+  
+  .share-model li:nth-child(4) a {
+    width: 87px;
+    background-position-x: -527px;
+  }
+  
+  .share-model li:nth-child(5) a {
+    position: relative;
+    width: 85px;
+    background-position-x: -654px;
+  }
+  
+  .share-model li:nth-child(5) .wechat-tip {
+    position: absolute;
+    top: -130px;
+    left: -23px;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 99;
+  }
+  
+  .share-model li:nth-child(6) {
+    margin-right: 123px;
+  }
+  
+  .share-model li:nth-child(6) a {
+    width: 88px;
+    background-position-x: -780px;
+  }
+  
+  .share-model li:nth-child(7) {
+    margin-right: 0;
+  }
+  
+  .share-model li:nth-child(7) a {
+    width: 88px;
+    background-position-x: 100%;
+  }
+  
+  /*cover-0905*/
+  .wrapper-video {
+    width: 100%;
+    min-width: 1337px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .wrapper-video .video {
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+  }
+  
+  .bg-footer-mak {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1410px;
+    background: url(//img.dota2.com.cn/file/cb/82/cb82c4bda013fbef0f73f26c069f16f61552357607.png)
+      no-repeat center 222px;
+  }
+  
+  /*cover-1128*/
+  .banner-title {
+    position: relative;
+    z-index: 3;
+    width: 625px;
+    height: 266px;
+    margin: 0 auto;
+    background-image: url(/cover/190311/title.png);
+    top: 412px;
+  }
+  
+  .floating {
+    -ms-animation: floating 1.3s ease-in-out infinite alternate;
+    -webkit-animation: floating 1.3s ease-in-out infinite alternate;
+    animation: floating 1.3s ease-in-out infinite alternate;
+  }
+  
+  .floating:hover {
+    -ms-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .floating.delay {
+    -ms-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .mak {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  .mak .mak-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 460px;
+    background-color: #000;
+    /* border: 1px solid #b663ed; */
+  }
+  .mak .mak-video video {
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+  .mak .mak-video i {
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    right: -52px;
+    top: 0px;
+    cursor: pointer;
+    background-image: url(/cover/190429/x.png);
+  }
+  
+  @media screen and (max-width: 1366px) {
+    .video-navbar {
+      transform: scale(0.91) translate(-70px, -30px);
+    }
+  }
+  
+  @-ms-keyframes floating {
+    from {
+      -ms-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+    to {
+      -ms-transform: translate(0, 12px);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes floating {
+    from {
+      -webkit-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+    to {
+      -webkit-transform: translate(0, 12px);
+      opacity: 1;
+    }
+  }
+  @keyframes floating {
+    from {
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+    to {
+      transform: translate(0, 12px);
+      opacity: 1;
+    }
+  }
